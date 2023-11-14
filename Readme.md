@@ -1,3 +1,3 @@
-#Hello folks
-I'm Sufiyan Ahmed Khan A "Front-End Devoloper" based in Pakistan with a passion to problem solving in my day to day tasks Today i took a challenge from front-end mentor and accomplished it in a single day in just 2 hours with each and every thing just purely perfect so have a look at my code and sugget me where i have to improve i'll be glad if u find mistakes in my code, so there is a chance for me to improve my knowladge and not to do same mistake as always
-Thanks A lot Brothers
+# Hello folks
+  I'm Sufiyan Ahmed Khan A "Front-End Devoloper" based in Pakistan with a passion to problem solving in my day to day tasks Today i took a challenge from front-end mentor and accomplished it in a single day in just 2 hours with each and every thing just purely perfect so have a look at my code and sugget me where i have to improve i'll be glad if u find mistakes in my code, so there is a chance for me to improve my knowladge and not to do same mistake as always
+  Thanks A lot Brothers
