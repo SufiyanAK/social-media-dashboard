@@ -217,6 +217,7 @@
 			if (isActive) {
 				toggle.classList.add('active');
 				document.querySelector('body').classList.add('light');
+				document.querySelector('.toggler-text').innerHTML = 'Light Mode'
 				console.log('active');
 				isActive = false;
 				return;
@@ -224,6 +225,7 @@
 				console.log('remove');
 				toggle.classList.remove('active');
 				document.querySelector('body').classList.remove('light');
+				document.querySelector('.toggler-text').innerHTML = 'Dark Mode'
 				isActive = true;
 			}
 		});
