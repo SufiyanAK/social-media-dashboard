@@ -1,0 +1,156 @@
+.hero {
+    margin-top: 4rem;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2rem;
+}
+
+.account-card {
+    cursor: pointer;
+    background-color: var(--card-bg);
+    transition: ease-in-out 0.5s;
+}
+
+.account-card:hover {
+    background-color: var(--card-bg-hover);
+}
+
+.f {
+    border-top: 4px solid;
+    border-color: var(--facebook);
+}
+
+.t {
+    border-top: 4px solid;
+    border-color: var(--twitter);
+}
+
+.y {
+    border-top: 4px solid;
+    border-color: var(--youtube);
+}
+
+.i {
+    border-top: 4px solid transparent;
+    border-image: linear-gradient(to left, #fdc468, #de4a96) 1;
+    
+}
+
+.account-details {
+    margin-top: 1rem;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.account-img {
+    display: flex;
+    justify-content: center;
+    gap: 0.6rem;
+    align-items: center;
+}
+
+.account-img img {
+    width: 1.4rem;
+    height: 1.4rem;
+}
+
+.account-name {
+    color: var(--secondary-text-clr);
+}
+
+.followers-count {
+    margin-top: 1.4rem;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.followers-count span {
+    font-size: 0.875rem;
+    display: block;
+    margin-top: 1.4rem;
+    letter-spacing: 3px;
+    color: var(--secondary-text-clr);
+}
+
+.account-analysis {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.875rem;
+    color: var(--increase);
+}
+
+.account-analysis-d {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.875rem;
+    color: var(--decrease);
+}
+
+
+
+/* 2xl = 1536px = 96rem huge desktop screen */
+@media (max-width: 96em) {
+}
+
+/* xl = 1280px = 80rem normal Desktop screen */
+@media (max-width: 80em) {
+    .followers-count {
+        font-size: 2.5rem;
+    }
+
+    .followers-count span {
+        font-size: 0.675rem;
+    }
+}
+
+/* lg = 1024px = 64rem Tabs and Ipad Portrait mode */
+@media (max-width: 64em) {
+    .cards {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .followers-count {
+        font-size: 3rem;
+    }
+    
+    .followers-count span {
+        font-size: 0.775rem;
+    }
+}
+
+/* md = 768px = 48rem Low resolution Tab and Ipad */
+@media (max-width: 48em) {
+    .cards {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+
+    .account-card {
+        margin: 0 5rem;
+    }
+}
+
+/* sm = 640px = 40rem a little lower resolution */
+@media (max-width: 40em) {
+    .account-card {
+        margin: 0 2rem;
+    }
+}
+
+/* xs = 475px = 29.6875rem Mobile Screen */
+@media (max-width: 29.6875rem) {
+    .followers-count {
+        font-size: 3rem;
+    }
+    
+    .followers-count span {
+        font-size: 0.775rem;
+    }
+}

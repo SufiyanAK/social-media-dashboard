@@ -1,0 +1,123 @@
+.overview {
+    margin-top: 4rem;
+}
+
+.overview-heading {
+    font-size: 2rem;
+}
+
+.overview-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    transition: ease-in-out 0.5s;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.view-card, .likes-card {
+    border-radius: 0.5rem;
+    background-color: var(--card-bg);
+    padding: 1rem 1.8rem;
+    cursor: pointer;
+    transition: ease-in-out 0.5s;
+}
+
+.view-card:hover, .likes-card:hover {
+    background-color: var(--card-bg-hover);
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-heading {
+    color: var(--secondary-text-clr);
+}
+
+.content img {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.counts {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.analyze {
+    font-size: 1rem;
+    display: flex;
+    color: var(--increase);
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.analyze-d {
+    font-size: 1.2rem;
+    display: flex;
+    color: var(--decrease);
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+
+/* For Basic need Initial */
+
+/* 2xl = 1536px = 96rem huge desktop screen */
+/* @media (max-width: 96em) {} */
+
+/* xl = 1280px = 80rem normal Desktop screen */
+/* @media (max-width: 80em) {} */
+
+/* lg = 1024px = 64rem Tabs and Ipad Portrait mode */
+@media (max-width: 64em) {
+    .overview-cards {
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .overview-heading {
+        font-size: 1.6rem;
+    }
+}
+
+/* md = 768px = 48rem Low resolution Tab and Ipad */
+@media (max-width: 48em) {
+    .overview-cards {
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        margin: 0 5rem;
+    }
+}
+
+/* sm = 640px = 40rem a little lower resolution */
+@media (max-width: 40em) {
+    .overview-heading {
+        margin-left: 2rem;
+        font-size: 1.4rem;
+    }
+
+    .overview-cards {
+        margin: 0 2rem;
+    }
+}
+
+/* xs = 475px = 29.6875rem Mobile Screen */
+/* @media (max-width: 29.6875rem) {} */
+
